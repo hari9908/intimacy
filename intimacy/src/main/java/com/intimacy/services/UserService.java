@@ -1,11 +1,16 @@
 package com.intimacy.services;
 
-import java.util.List;
+import java.util.Map;
 
-import com.intimacy.model.User;
+import org.springframework.http.ResponseEntity;
+
+import com.intimacy.request.UserRequestEntity;
 
 public interface UserService {
+	ResponseEntity<Map<String, Object>> addUser(UserRequestEntity userRequestEntity);
 
-	List<User> getAllUsers();
-	
+	ResponseEntity<Map<String, Object>> getUser(UserRequestEntity userRequestEntity);
+
+	ResponseEntity<Map<String, Object>> findAllUsers();
+
 }

@@ -1,0 +1,199 @@
+19:59:07.639 INFO  com.intimacy.IntimacyApplication - Starting IntimacyApplication using Java 15.0.2 on DESKTOP-BVSBNTC with PID 8832 (C:\Users\haria\git\intimacy\intimacy\target\classes started by haria in C:\Users\haria\git\intimacy\intimacy)
+19:59:07.639 INFO  com.intimacy.IntimacyApplication - No active profile set, falling back to default profiles: default
+19:59:07.807 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+19:59:07.833 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
+19:59:07.936 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+19:59:07.937 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:59:07.937 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+19:59:07.958 INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:59:07.958 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 317 ms
+19:59:07.990 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+19:59:08.001 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+19:59:08.007 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-136 - Starting...
+19:59:08.011 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-136 - Start completed.
+19:59:08.011 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+19:59:08.023 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19:59:08.035 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'friendsServiceImpl' defined in file [C:\Users\haria\git\intimacy\intimacy\target\classes\com\intimacy\services\impl\FriendsServiceImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.intimacy.services.impl.FriendsServiceImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method partitioningBy(Predicate<? super T>) in the type Collectors is not applicable for the arguments (Friendship::getAccepted)
+	The type Friendship does not define getAccepted(T) that is applicable here
+	The method getFirstName() is undefined for the type User
+	The method getLastName() is undefined for the type User
+	The method getUserSender() is undefined for the type Friendship
+	The method map(Function<? super Friendship,? extends R>) in the type Stream<Friendship> is not applicable for the arguments (Friendship::getUserReceiver)
+	The type Friendship does not define getUserReceiver(Friendship) that is applicable here
+	The method getUserReceiver() is undefined for the type Friendship
+	The method map(Function<? super Friendship,? extends R>) in the type Stream<Friendship> is not applicable for the arguments (Friendship::getUserSender)
+	The type Friendship does not define getUserSender(Friendship) that is applicable here
+	Cannot infer type argument(s) for <R> map(Function<? super T,? extends R>)
+	The method getUserSender() is undefined for the type Friendship
+	The method getUserReceiver() is undefined for the type Friendship
+	The method getUserSender() is undefined for the type Friendship
+	Cannot infer type argument(s) for <R> map(Function<? super T,? extends R>)
+	The method getUserSender() is undefined for the type Friendship
+	The method getUserReceiver() is undefined for the type Friendship
+	The method getUserSender() is undefined for the type Friendship
+
+19:59:08.035 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:59:08.116 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19:59:08.116 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:59:08.116 INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+19:59:08.116 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-136 - Shutdown initiated...
+19:59:08.118 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-136 - Shutdown completed.
+19:59:08.119 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+19:59:08.123 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+19:59:08.126 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'friendsServiceImpl' defined in file [C:\Users\haria\git\intimacy\intimacy\target\classes\com\intimacy\services\impl\FriendsServiceImpl.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.intimacy.services.impl.FriendsServiceImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method partitioningBy(Predicate<? super T>) in the type Collectors is not applicable for the arguments (Friendship::getAccepted)
+	The type Friendship does not define getAccepted(T) that is applicable here
+	The method getFirstName() is undefined for the type User
+	The method getLastName() is undefined for the type User
+	The method getUserSender() is undefined for the type Friendship
+	The method map(Function<? super Friendship,? extends R>) in the type Stream<Friendship> is not applicable for the arguments (Friendship::getUserReceiver)
+	The type Friendship does not define getUserReceiver(Friendship) that is applicable here
+	The method getUserReceiver() is undefined for the type Friendship
+	The method map(Function<? super Friendship,? extends R>) in the type Stream<Friendship> is not applicable for the arguments (Friendship::getUserSender)
+	The type Friendship does not define getUserSender(Friendship) that is applicable here
+	Cannot infer type argument(s) for <R> map(Function<? super T,? extends R>)
+	The method getUserSender() is undefined for the type Friendship
+	The method getUserReceiver() is undefined for the type Friendship
+	The method getUserSender() is undefined for the type Friendship
+	Cannot infer type argument(s) for <R> map(Function<? super T,? extends R>)
+	The method getUserSender() is undefined for the type Friendship
+	The method getUserReceiver() is undefined for the type Friendship
+	The method getUserSender() is undefined for the type Friendship
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1216)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.intimacy.IntimacyApplication.main(IntimacyApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.intimacy.services.impl.FriendsServiceImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method partitioningBy(Predicate<? super T>) in the type Collectors is not applicable for the arguments (Friendship::getAccepted)
+	The type Friendship does not define getAccepted(T) that is applicable here
+	The method getFirstName() is undefined for the type User
+	The method getLastName() is undefined for the type User
+	The method getUserSender() is undefined for the type Friendship
+	The method map(Function<? super Friendship,? extends R>) in the type Stream<Friendship> is not applicable for the arguments (Friendship::getUserReceiver)
+	The type Friendship does not define getUserReceiver(Friendship) that is applicable here
+	The method getUserReceiver() is undefined for the type Friendship
+	The method map(Function<? super Friendship,? extends R>) in the type Stream<Friendship> is not applicable for the arguments (Friendship::getUserSender)
+	The type Friendship does not define getUserSender(Friendship) that is applicable here
+	Cannot infer type argument(s) for <R> map(Function<? super T,? extends R>)
+	The method getUserSender() is undefined for the type Friendship
+	The method getUserReceiver() is undefined for the type Friendship
+	The method getUserSender() is undefined for the type Friendship
+	Cannot infer type argument(s) for <R> map(Function<? super T,? extends R>)
+	The method getUserSender() is undefined for the type Friendship
+	The method getUserReceiver() is undefined for the type Friendship
+	The method getUserSender() is undefined for the type Friendship
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310)
+	... 23 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The method partitioningBy(Predicate<? super T>) in the type Collectors is not applicable for the arguments (Friendship::getAccepted)
+	The type Friendship does not define getAccepted(T) that is applicable here
+	The method getFirstName() is undefined for the type User
+	The method getLastName() is undefined for the type User
+	The method getUserSender() is undefined for the type Friendship
+	The method map(Function<? super Friendship,? extends R>) in the type Stream<Friendship> is not applicable for the arguments (Friendship::getUserReceiver)
+	The type Friendship does not define getUserReceiver(Friendship) that is applicable here
+	The method getUserReceiver() is undefined for the type Friendship
+	The method map(Function<? super Friendship,? extends R>) in the type Stream<Friendship> is not applicable for the arguments (Friendship::getUserSender)
+	The type Friendship does not define getUserSender(Friendship) that is applicable here
+	Cannot infer type argument(s) for <R> map(Function<? super T,? extends R>)
+	The method getUserSender() is undefined for the type Friendship
+	The method getUserReceiver() is undefined for the type Friendship
+	The method getUserSender() is undefined for the type Friendship
+	Cannot infer type argument(s) for <R> map(Function<? super T,? extends R>)
+	The method getUserSender() is undefined for the type Friendship
+	The method getUserReceiver() is undefined for the type Friendship
+	The method getUserSender() is undefined for the type Friendship
+
+	at com.intimacy.services.impl.FriendsServiceImpl.<init>(FriendsServiceImpl.java:39)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212)
+	... 25 common frames omitted
+20:00:29.294 INFO  com.intimacy.IntimacyApplication - Starting IntimacyApplication using Java 15.0.2 on DESKTOP-BVSBNTC with PID 8832 (C:\Users\haria\git\intimacy\intimacy\target\classes started by haria in C:\Users\haria\git\intimacy\intimacy)
+20:00:29.295 INFO  com.intimacy.IntimacyApplication - The following profiles are active: prod
+20:00:29.467 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+20:00:29.492 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+20:00:29.567 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'servletWebServerFactoryCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryAutoConfiguration.class]: Unsatisfied dependency expressed through method 'servletWebServerFactoryCustomizer' parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'server-org.springframework.boot.autoconfigure.web.ServerProperties': Could not bind properties to 'ServerProperties' : prefix=server, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'server.port' to java.lang.Integer
+20:00:29.569 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20:00:29.573 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'server.port' to java.lang.Integer:
+
+    Property: server.port
+    Value: ${PORT}
+    Origin: class path resource [application-prod.properties] - 1:13
+    Reason: failed to convert java.lang.String to java.lang.Integer
+
+Action:
+
+Update your application's configuration
+
+20:01:00.599 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+20:01:00.603 INFO  com.intimacy.IntimacyApplication - Starting IntimacyApplication using Java 15.0.2 on DESKTOP-BVSBNTC with PID 12892 (C:\Users\haria\git\intimacy\intimacy\target\classes started by haria in C:\Users\haria\git\intimacy\intimacy)
+20:01:00.603 INFO  com.intimacy.IntimacyApplication - The following profiles are active: prod
+20:01:00.643 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:01:00.643 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:01:01.273 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+20:01:01.340 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
+20:01:01.679 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'servletWebServerFactoryCustomizer' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryAutoConfiguration.class]: Unsatisfied dependency expressed through method 'servletWebServerFactoryCustomizer' parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'server-org.springframework.boot.autoconfigure.web.ServerProperties': Could not bind properties to 'ServerProperties' : prefix=server, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'server.port' to java.lang.Integer
+20:01:01.687 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+20:01:01.706 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'server.port' to java.lang.Integer:
+
+    Property: server.port
+    Value: ${PORT}
+    Origin: class path resource [application-prod.properties] - 1:13
+    Reason: failed to convert java.lang.String to java.lang.Integer
+
+Action:
+
+Update your application's configuration
+
